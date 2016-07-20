@@ -1,5 +1,5 @@
 ---
-title: "Few remaining issues with current workflows"
+title: "Few selected issues with current workflows"
 author: "Niko Partanen / HZSK"
 date: "`r Sys.Date()`"
 output:
@@ -8,7 +8,7 @@ output:
     latex_engine: xelatex
     includes:
       in_header: header.tex
-bibliography: [~/FRibliography/bibtex/FRibliography.bib, /Volumes/langdoc/compile_corpus/sessions.bib]
+bibliography: [~/FRibliography/bibtex/FRibliography.bib, sessions.bib]
 link-citations: yes
 ---
 
@@ -31,14 +31,14 @@ options(htmltools.dir.version = FALSE)
 
 `r tufte::newthought('To summarize')`, I have selected two distinct topics which I think have to be addressed somehow. However, large portion of this handout describes our basic corpus workflow. Reason of this is to make rest of the conversation more sensible, as I'm afraid some ideas seem weird or unnecessary if dropped without further context. The topics I address specifically are:
 
-- Reuse of corpus raw data -- getting exact about how files go together
+- Reuse of corpus raw data -- exactly how files go together
 - Citing the individual resources in the corpus
 
 I must mention already now that I do not have any finished solutions for any of these issues. But in many cases we know where the problem is.
 
-I also want to emphasize that there is nothing new here. All infrastructure around the things described basically exists, but it is more matter of adopting practices around these tools. And of course some things just do not work as they should right now.
+I also want to emphasize that there is nothing new here. All infrastructure around the things described basically exists, but maybe it is more matter of adopting practices around these tools.
 
-PDF version of this same can be found from [here](https://nikopartanen.github.io/freiburg-handout/partanen-freiburg-handout.pdf). 
+PDF version of this same can be found [here](https://nikopartanen.github.io/freiburg-handout/partanen-freiburg-handout.pdf). 
 
 ## Introduction
 
@@ -186,30 +186,33 @@ phm <- function (text)
         text
     }
 }
+
+utterance <- "Сьӧкыдлун то, что наа прӧстэ менэ из пӧнимайтныс водздзык."
+
 ```
 
 
-For the sake of example, let's pay attention to the interesting pronoun `r phm('naa')` in example kpv\_izva20150703-01-b-100. In standard Komi we would have `r phm('najə')`, whereas in Iźva dialect which we have here one normally finds `r phm('nɨa')`. What is the exact distribution of `r phm('naa')`? Everyone would love to know, but I think no one has looked into this yet. However, we can use this as an example of citing individual corpus item.
+For the sake of example, let's pay attention to the interesting pronoun `r phm('naa')` in example kpv\_izva20150703-01-b-100. In standard Komi we would have `r phm('najə')`, whereas in Iźva dialect which we have here one normally finds `r phm('nɨa')`. What is the exact distribution of `r phm('naa')`? Everyone would love to know, but I think no one has looked into this yet. However, we can use this as an example of citing individual corpus item below the session level.
 
-> In Iźva Komi `r phm('naa')` is not typical 3pl form, but it occurs everywhere, for example in speech of Salehard Komi, as exemplified in this sentence of Irina Terentyeva [@kpv_izva20150703-01-b-100].
+> In Iźva Komi `r phm('naa')` is not typical 3pl form, but it occurs everywhere, for example in speech of Salehard Komi, as exemplified in this sentence of Irina Terentyeva: `r phm('utterance')` [@kpv_izva20150703-01-b-100].
 
-What I want to emphasize here is that for a reference to the segment I want the output look a bit like one below. Now I'm using there segment time start and end, but of course one could also use the reference id. The question is bit complicated, because what you really want is **a link that refers to that item where ever it is**:
+What I want to emphasize here is that for a reference to the segment I want the output look a bit like one below. Now I'm using there segment time start and end, but of course one could also use the reference id. The question is bit complicated, because what I really want is **a link that refers to that item where ever it is**:
 
 > Blokland et. al. 2015. “Session: kpv_izva20150703-01-b. Interview with Irina Terentyeva.” Segment time start: 296623 ms, time end: 300565 ms. Recorded 7.3.2015 in Ižma, Komi Republic, Russia. Resource created in Iźva Komi Documentation Project, funded by Kone Foundation in 2014—2016. Archived in http://hdl.handle.net/00000/0000-0000-0XX0-0.
 
-Ideally the link in reference would actually be linkable and lead, for example, to that annotation in Trova. I can't test that now as the LAT seems to be under maintenance, and anyway I would not have my current Komi files there because the upload system has been so difficult, but I exemplify this with Finnish corpus. In LAT this is adviced to cite as: *"Suomen kielen näytteitä - Samples of Spoken Finnish [online speech corpus], version 1.0. - Helsinki : Institute for the Languages of Finland, 2014. [accessed dd.mm.yyyy]. Available at: http://urn.fi/urn:nbn:fi:lb-1001100134."*, and this is also all good and fine. But if we pick up examples from there it is often quite important to be able to refer to individual examples from the file.
+Ideally the link in reference would actually be linkable and lead, for example, to that annotation in Trova. I can't test that now as the LAT seems to be under maintenance, and anyway I would not have my current Komi files there because the upload system has been so difficult, but I exemplify this with Finnish corpus. In LAT this is adviced to cite as: *"Suomen kielen näytteitä - Samples of Spoken Finnish [online speech corpus], version 1.0. - Helsinki : Institute for the Languages of Finland, 2014. [accessed dd.mm.yyyy]. Available at: http://urn.fi/urn:nbn:fi:lb-1001100134."*, and this is also all good and fine. But if we pick up examples from there it is often quite important to be able to refer to individual examples from the file. Let's take this example:
 
 > Finnish dialect spoken around Mikkeli, Savo, is clearly the most beautiful variant of Finnic languages. For reference, see this narrative about skinning a squirrel [@skn-mikkeli-example]. According to TsammaLex, [half of this animal's body-length is tail](http://tsammalex.clld.org/parameters/paraxeruscepapi). Tail is also mentioned in the citation, as Aukusti Kurki, born in 16.5.1879, describes colourfully how the tail is removed.
 
-Now if you click that link to the corpus, which I also put [here](https://lat.csc.fi/ds/annex/runLoader?handle=hdl:11113/00-0000-0000-0000-1DDE-2&time=3618237&duration=39096&viewType=timeline) as in PDF it goes to the bottom (in HTML it should be in the side), one should get that segment open.
+Now if you click that link to the corpus, which I also put [here](https://lat.csc.fi/ds/annex/runLoader?handle=hdl:11113/00-0000-0000-0000-1DDE-2&time=3618237&duration=39096&viewType=timeline) as in PDF it goes to the bottom (in HTML it should be in the side), one should get that segment open. In principle there are no problems either with referring to closed corpus items because then the system would just ask you to log in.
 
-**The important idea here is of course that these citations should be accessible through a bibliography which is generated from the annotations and the metadata.** It should be possible to refer to the items like this without thinking twice. It gets more complicated of course, because some materials have only been digitalized in the project, some have been transliterated, some have been published before and reused etc, etc. We have all this information though, so it should not be too difficult to set up. Of course this kind of bibliography would have some tens of thousands of entries for Komi corpus, but there are bibliographies like these out there.^[There are also other formats than bibtex for storing this kind of information.]
+**The important idea here is of course that these citations should be accessible through a bibliography which is automatically generated from the annotations and the metadata.** It should be possible to refer to the items like this without thinking twice. It gets more complicated of course, because some materials have only been digitalized in the project, some have been transliterated, some have been published before and reused etc, etc. We have all this information though, so it should not be too difficult to set up. Of course this kind of bibliography would have some tens of thousands of entries for Komi corpus, but there are bibliographies like these out there.^[There are also other formats than bibtex for storing this kind of information.] In real use it would need to be more sophisticated, one could, for example, build automatically a table or some special section of the references where the used references are listed. I'll talk more about it tomorrow, but there are no obstacles in picking up the wanted examples from the ELAN files automatically either.
 
 Tsammalex is also good example in the sense that I can't find any obvious way to refer exactly to that page about that squirrel! There is of course this:
 
 > Christfried Naumann & Steven Moran & Guillaume Segerer & Robert Forkel (eds.) 2015. Tsammalex: A lexical database on plants and animals. Leipzig: Max Planck Institute for Evolutionary Anthropology. (Available online at http://tsammalex.clld.org, Accessed on 2016-07-20.) 
 
-But maybe there could be a button for generating citations to individual pages? Wouldn't this make everything much more user friendly, as now I have to take care myself that I have the link to the entry somewhere. I don't know really, maybe my perspective is somehow skewed and citing these resources more exactly and automatically is of no interests of anyone?
+But maybe there could be a button for generating citations to individual pages? Wouldn't this make everything much more user-friendly, as now I have to take care myself that I have the link to the entry somewhere. I don't know really, maybe my perspective is somehow skewed and citing these resources more exactly and automatically is of no interests of anyone?
 
 ![Some African squirrel](https://upload.wikimedia.org/wikipedia/commons/b/ba/Paraxerus_cepapi00.jpg)
 
