@@ -214,7 +214,7 @@ Tsammalex is also good example in the sense that I can't find any obvious way to
 
 But maybe there could be a button for generating citations to individual pages? Wouldn't this make everything much more user-friendly, as now I have to take care myself that I have the link to the entry somewhere. I don't know really, maybe my perspective is somehow skewed and citing these resources more exactly and automatically is of no interests of anyone?
 
-![Some African squirrel](https://upload.wikimedia.org/wikipedia/commons/b/ba/Paraxerus_cepapi00.jpg)
+![Some African squirrel in open domain](https://upload.wikimedia.org/wikipedia/commons/b/ba/Paraxerus_cepapi00.jpg)
 
 ## Appendix: Some other pressing issues
 
