@@ -29,14 +29,14 @@ options(htmltools.dir.version = FALSE)
 
 `r tufte::newthought('To summarize')`, I have selected two distinct topics which I think have to be addressed somehow. However, large portion of this handout describes our basic corpus workflow. Reason of this is to make rest of the conversation more sensible, as I'm afraid some ideas seem weird or unnecessary if dropped without further context. The topics I address specifically are:
 
-- Reuse of corpus raw data -- how files go together
+- Reuse of corpus raw data -- getting exact about how files go together
 - Citing the individual resources in the corpus
 
 I must mention already now that I do not have any finished solutions for any of these issues. But in many cases we know where the problem is.
 
 I also want to emphasize that there is nothing new here. All infrastructure around the things described basically exists, but it is more matter of adopting practices around these tools. And of course some things just do not work as they should right now.
 
-PDF version of this same can be found from [here](https://nikopartanen.github.io/freiburg-handout/partanen-freiburg-handout.pdf).
+PDF version of this same can be found from [here](https://nikopartanen.github.io/freiburg-handout/partanen-freiburg-handout.pdf). 
 
 ## Introduction
 
