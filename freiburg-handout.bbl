@@ -1,0 +1,61 @@
+\begin{thebibliography}{8}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Blokland et~al.(2014)Blokland, Chuprov, Fedina, Partanen, and
+  Rie{\ss}ler]{IKDP}
+Rogier Blokland, Vassili Chuprov, Marina Fedina, Niko Partanen, and Michael
+  Rie{\ss}ler.
+\newblock Iźva komi documentation project. funded by kone foundation in
+  2014-2016. corpus archived in http://hdl.handle.net/00000/0000-0000-0xx0-0.
+\newblock 2014.
+
+\bibitem[Blokland et~al.(2015{\natexlab{a}})Blokland, Chuprov, Fedina,
+  Partanen, and Rie{\ss}ler]{kpv_izva20150703-01-b}
+Rogier Blokland, Vassili Chuprov, Marina Fedina, Niko Partanen, and Michael
+  Rie{\ss}ler.
+\newblock Interview with irina terentyeva.
+\newblock 2015{\natexlab{a}}.
+
+\bibitem[Blokland et~al.(2015{\natexlab{b}})Blokland, Chuprov, Fedina,
+  Partanen, and Rie{\ss}ler]{kpv_izva20150703-01-b-100}
+Rogier Blokland, Vassili Chuprov, Marina Fedina, Niko Partanen, and Michael
+  Rie{\ss}ler.
+\newblock Interview with irina terentyeva.
+\newblock 2015{\natexlab{b}}.
+
+\bibitem[Blokland et~al.(2015{\natexlab{c}})Blokland, Chuprov, Fedina,
+  Partanen, and Rie{\ss}ler]{kpv_izva20160625-02}
+Rogier Blokland, Vassili Chuprov, Marina Fedina, Niko Partanen, and Michael
+  Rie{\ss}ler.
+\newblock Interview with aleksandr and vassili artiev.
+\newblock 2015{\natexlab{c}}.
+
+\bibitem[Blokland et~al.(2016)Blokland, Chuprov, Fedina, Partanen, and
+  Rie{\ss}ler]{kpv_izva20160623-01}
+Rogier Blokland, Vassili Chuprov, Marina Fedina, Niko Partanen, and Michael
+  Rie{\ss}ler.
+\newblock Interview with nadežda hatanzyei.
+\newblock 2016.
+
+\bibitem[Heider(2006)]{heider2006a}
+Karl~G. Heider.
+\newblock \emph{Ethnographic Film. Revised Edition}.
+\newblock University of Texas Press, 2006.
+
+\bibitem[K{\"u}bler and Zinsmeister(2015)]{kublerEtAl2015a}
+Sandra K{\"u}bler and Heike Zinsmeister.
+\newblock \emph{Corpus linguistics and linguistically annotated corpora}.
+\newblock Bloomsbury Publishing, 2015.
+
+\bibitem[Wilbur(2008+)]{PSDP}
+Joshua Wilbur.
+\newblock Pite saami: Documenting the language and culture.
+\newblock In \emph{Endangered Languages Archive (ELAR)}. Hans Rausing
+  Endangered Languages Project, 2008+.
+\newblock URL \url{http://elar.soas.ac.uk/deposit/0053}.
+
+\end{thebibliography}
