@@ -194,7 +194,7 @@ utterance <- "Сьӧкыдлун то, что наа прӧстэ менэ из 
 
 For the sake of example, let's pay attention to the interesting pronoun `r phm('naa')` in example kpv\_izva20150703-01-b-100. In standard Komi we would have `r phm('najə')`, whereas in Iźva dialect which we have here one normally finds `r phm('nɨa')`. What is the exact distribution of `r phm('naa')`? Everyone would love to know, but I think no one has looked into this yet. However, we can use this as an example of citing individual corpus item below the session level.
 
-> In Iźva Komi `r phm('naa')` is not the typical 3pl pronoun form, but it occurs everywhere, for example in speech of Salehard Komi, as exemplified in this sentence of Irina Terentyeva: `r phm('utterance')` [@kpv_izva20150703-01-b-100].
+> In Iźva Komi `r phm('naa')` is not the typical 3pl pronoun form, but it occurs everywhere, for example in speech of Salehard Komi, as exemplified in this sentence of Irina Terentyeva: `r phm(utterance)` [@kpv_izva20150703-01-b-100].
 
 What I want to emphasize here is that for a reference to the segment, I want the output look a bit like one below. Now I'm using there segment time start and end, but of course one could also use the reference ID. The question is bit complicated, because what I really want is **a link that refers to that item where ever it is**:
 
