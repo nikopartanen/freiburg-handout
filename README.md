@@ -9,3 +9,4 @@ This document can be read [here](https://nikopartanen.github.io/freiburg-handout
 
 The handout is also nice example from the working method where one can produce good looking PDF and HTML from the same source document. This demands some special attention to the ways how PDF output gets rendered through LaTeX and HTML needs some custom CSS to accomplish something similar, but this is often more a detail than a real problem.
 
+Of course in some cases one probably would need to split the PDF and HTML versions from one another, as HTML would allow very easily much more interactive maps and playable sound and video, which just doesn't work like that in PDF. In principle PDF could contain links to these elements though.
